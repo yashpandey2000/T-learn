@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 Apr, 2022 7:53:03 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.tlearn.bean">
+    <class name="UserBean" table="st_user">
+    
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+         <property name="lastname" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        
+        <property name="emailid" type="java.lang.String">
+            <column name="EMAIL_ID" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="dob" type="java.util.Date">
+            <column name="DOB" />
+        </property>
+         <property name="mobileno" type="java.lang.String">
+            <column name="MOBILE_NO" />
+        </property>
+       
+        <property name="roleid" type="long">
+            <column name="ROLE_ID" />
+        </property>
+        <property name="rolename" type="java.lang.String">
+            <column name="ROLE_NAME" />
+        </property>
+        
+        
+        <property name="Qualifications" type="java.lang.String">
+            <column name="QUALIFICATIONS" />
+        </property>
+        <property name="tea_uniqueid" type="java.lang.String">
+            <column name="TEA_UNIQUE_ID" />
+        </property>
+        
+         <property name="institute" type="java.lang.String">
+            <column name="STD_INSTITUTE" />
+        </property>
+        
+        <property name="profile" type="java.lang.String">
+            <column name="USER_PROFILE" />
+        </property>
+      
+        
+        <property name="createdby" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedby" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createddatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATE_TIME" />
+        </property>
+        <property name="modifieddatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATE_TIME" />
+        </property>
+        
+        
+        
+    </class>
+</hibernate-mapping>

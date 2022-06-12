@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Apr, 2022 6:28:32 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.tlearn.bean">
+    
+    <class name="MaterialSupportBean" table="st_Material">
+    
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+    
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="teacher_name" type="java.lang.String" access="field">
+            <column name="TEACHER_NAME" />
+        </property>
+        <property name="course_name" type="java.lang.String">
+            <column name="COURSE_NAME" />
+        </property>
+        
+        
+        <property name="createdby" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedby" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createddatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATETIME" />
+        </property>
+        <property name="modifieddatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATETIME" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

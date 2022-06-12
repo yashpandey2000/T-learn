@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Apr, 2022 6:28:32 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.tlearn.bean">
+    <class name="CourseBean" table="st_Course">
+     
+        <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="course_name" type="java.lang.String">
+            <column name="COURSE_NAME" />
+        </property>
+         <property name="course_description" type="java.lang.String">
+            <column name="COURSE_DESCRIPTION" />
+        </property>
+        
+        <property name="course_duration" type="java.lang.String">
+            <column name="COURSE_DURATION" />
+        </property>
+        
+        <property name="cgroup_id" type="long">
+            <column name="CGROUP_ID" />
+        </property>
+        <property name="cgroup_name" type="java.lang.String">
+            <column name="CGROUP_NAME" />
+        </property>
+        <property name="Tea_id" type="java.lang.String">
+            <column name="TEACHER_ID" />
+        </property>
+        <property name="Tea_name" type="java.lang.String">
+            <column name="Teacher_NAME" />
+        </property>
+        
+       <property name="image" type="java.lang.String">
+            <column name="IMAGE"  />
+        </property>
+        
+         <property name="meet_code" type="java.lang.String">
+            <column name="MEETING_CODE"  />
+        </property>
+        
+        
+        <property name="num_student_enrolled" type="java.lang.String">
+            <column name="NUM_STUDENT_ENROLLED" />
+        </property>
+       
+        
+         <property name="createdby" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedby" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createddatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATETIME" />
+        </property>
+        <property name="modifieddatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATETIME" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

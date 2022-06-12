@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 16 Apr, 2022 5:29:27 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.tlearn.bean">
+   <class name="StudentBean" table="st_student">
+    
+       <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        
+         <property name="firstname" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+         <property name="lastname" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="emailid" type="java.lang.String">
+            <column name="EMAIL_ID" />
+        </property>
+        <property name="course_id" type="long">
+            <column name="COURSE_ID" />
+        </property>
+         <property name="course_name" type="java.lang.String">
+            <column name="COURSE_NAME" />
+        </property>
+        <property name="mobileno" type="java.lang.String">
+            <column name="MOBILE_NO" />
+        </property>
+         <property name="doj" type="java.util.Date">
+            <column name="DOJ" />
+        </property>
+        <property name="institute" type="java.lang.String">
+            <column name="INSTITUTE" />
+        </property>
+         <property name="num_Course_enrolled" type="java.lang.String">
+            <column name="NUM_COURSE_ENROLLED" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        
+    </class>
+</hibernate-mapping>

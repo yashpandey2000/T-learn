@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 15 Apr, 2022 6:28:32 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.tlearn.bean">
+      <class name="UserBean" table="st_college">
+       <id name="id" type="long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="gender" type="java.lang.String">
+            <column name="GENDER" />
+        </property>
+        <property name="dob" type="java.util.Date">
+            <column name="DOB" />
+        </property>
+        <property name="roleid" type="long">
+            <column name="ROLEID" />
+        </property>
+        <property name="rolename" type="java.lang.String">
+            <column name="ROLENAME" />
+        </property>
+        <property name="lock" type="java.lang.String">
+            <column name="LOCK" />
+        </property>
+        <property name="emailid" type="java.lang.String">
+            <column name="EMAILID" />
+        </property>
+        <property name="mobileno" type="java.lang.String">
+            <column name="MOBILENO" />
+        </property>
+        <property name="confirmpassword" type="java.lang.String">
+            <column name="CONFIRMPASSWORD" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        
+        <property name="createdby" type="java.lang.String" length="50">
+            <column name="CREATED_BY" />
+        </property>
+        <property name="modifiedby" type="java.lang.String" length="50">
+            <column name="MODIFIED_BY" />
+        </property>
+        <property name="createddatetime" type="java.sql.Timestamp">
+            <column name="CREATED_DATETIME" />
+        </property>
+        <property name="modifieddatetime" type="java.sql.Timestamp">
+            <column name="MODIFIED_DATETIME" />
+        </property>
+        
+        
+        <!-- <property name="num_Course_enrolled" type="java.lang.String">
+            <column name="NUM_COURSE_ENROLLED" />
+        </property> -->
+        <!-- <property name="institute" type="java.lang.String">
+            <column name="ST_INSTITUTE" />
+        </property> -->
+        
+        
+        <!-- <property name="Qualifications" type="java.lang.String">
+            <column name="T_QUALIFICATIONS" />
+        </property>
+        <property name="course_name" type="long">
+            <column name="T_COURSE_NAME" />
+        </property> -->
+        
+    </class>
+</hibernate-mapping>
